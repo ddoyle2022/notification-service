@@ -7,6 +7,7 @@ config :notification_service, NotificationService.Repo,
   hostname: "localhost",
   database: "notification_service_dev",
   stacktrace: true,
+  port: "5500",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
@@ -19,7 +20,7 @@ config :notification_service, NotificationService.Repo,
 config :notification_service, NotificationServiceWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  http: [ip: {127, 0, 0, 1}, port: 4020],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
