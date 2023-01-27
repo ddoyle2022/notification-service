@@ -1,4 +1,4 @@
-defmodule NotificationService.Admin.Email do
+defmodule NotificationService.Email.Email do
   use Ecto.Schema
   import Ecto.Changeset
 
